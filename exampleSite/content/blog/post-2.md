@@ -1,167 +1,64 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "How To Customize Oclif Plugin's help class"
+date: 2023-08-18
 draft: false
 
 # post thumb
-image: "images/featured-post/post-2.jpg"
+image: "images/featured-post/oclif-1.png"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
-categories: 
-  - "HTML & CSS"
+categories:
+  - "Coding"
 tags:
-  - "Photos"
-  - "Game"
-  - "React"
-  - "Python"
-  - "New"
+  - "CLI Application"
+  - "Salesforce"
+
 
 # post type
 type: "featured"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+## What is Oclif
+
+Imagine Oclif as a smart and efficient assistant that empowers you to interact with your computer in a way that's both intuitive and powerful. Oclif stands for "Open CLI Framework," where CLI stands for "Command Line Interface." Now, don't let those fancy words scare you – CLI is simply a way to talk to your computer by typing text-based commands, like having a conversation with it.
+
+Oclif takes this concept and turns it into something even more amazing. It provides a framework that helps developers and tech enthusiasts build their own command-line tools or applications. These tools can perform a wide range of tasks, from managing files and data to automating complex processes. So, even if you're not a coding guru, Oclif makes it possible to create tools that interact with your computer effortlessly.
 
 <hr>
 
-##### Emphasis
+## Oclif Help Plugin
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+When you create a CLI (Command Line Interface) application using Oclif, you're automatically provided with a built-in help plugin that enhances the user experience by offering organized and comprehensive information. This help plugin is automatically triggered when users invoke the `--help` flag for your CLI commands.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+### Utilizing the `--help` Flag
 
-Combined emphasis with **asterisks and _underscores_**.
+The `--help` flag is a fundamental feature of Oclif, designed to assist users in understanding your CLI application's functionality and available commands. It provides clear and structured information, including:
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+- **Description:** A concise overview of your CLI's purpose and functionality.
+- **Usage:** Examples of how to use your CLI commands, highlighting their syntax and possible arguments.
+- **Topics:** Organized sections that group related commands together for easier navigation.
+- **Commands:** A listing of all available commands, along with brief descriptions.
+- **Options:** Details about any options that can be used with the commands, including default values and descriptions.
+- **Examples:** Real-world examples that illustrate how to use various commands effectively.
 
-<hr>
+### Exploring the Code
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+The code responsible for generating the user-friendly help content can be found in the [Oclif Core repository](https://github.com/oclif/core) under the `src/help` directory. This directory contains the implementation that dynamically generates the help output based on your CLI application's structure and metadata.
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+### Enhancing User Experience
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+By leveraging the built-in help plugin, you provide users with a consistent and intuitive way to explore your CLI's capabilities. This not only makes your CLI more user-friendly but also helps users feel confident in utilizing its full potential. As a result, your CLI becomes more approachable to both beginners and experienced users alike.
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
+Remember that a well-organized and informative `--help` output can significantly contribute to the success and adoption of your CLI application.
 
 
-##### Unordered List
+## Creating a custom Help Class
 
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-
-<hr>
-
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
+While working on an open source project ([preevy](https://github.com/livecycle/preevy)), there was an issue assigned to me where I needed to create a custom help class as the help plugin by default does not show global flag on the root command. 
+ ![Image](../../images/post/pic1.jpeg)
 
 ##### Youtube video
 

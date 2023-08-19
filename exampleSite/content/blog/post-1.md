@@ -1,35 +1,27 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
-draft: false
+title: "How To Customize Oclif Plugin's help class"
+date: 2023-08-18
+draft: true
 
 # post thumb
-image: "images/featured-post/post-1.jpg"
+image: "images/featured-post/oclif-1.png"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories:
-  - "Android And Gaming"
+  - "Coding"
 tags:
-  - "Photos"
-  - "Game"
-  - "React"
-  - "Python"
-  - "New"
+  - "CLI Application"
+  - "Salesforce"
+
 
 # post type
 type: "featured"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-
+## What is Oclif
 <hr>
 
 ##### Emphasis

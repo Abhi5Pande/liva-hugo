@@ -82,15 +82,15 @@ logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Abhijit Pachpande"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+mobile = "+91 9689357955"
+email = "abhi.pachpande@gmail.com"
+location = "Pune/Chennai"
 # copyright
-copyright = "| copyright &copy; 2021 [Themefisher](https://themefisher.com/hugo-themes/) All Rights Reserved |"
+copyright = "| copyright &copy; 2021 [Abhijit Pachpande](http://blog.abhijitpachpande.co.in/) All Rights Reserved |"
 
 # Preloader
 [params.preloader]
@@ -105,8 +105,7 @@ enable = true
 [params.newsletter]
 enable = true
 title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
-
+content = "Join our newsletter community and embark on a journey where information meets inspiration – your next adventure awaits!"
 
 # cookies
 [params.cookies]
@@ -118,24 +117,24 @@ expire_days = 2
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://facebook.com/abhijit.pachpande.9/"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/AbhijitPachpan2"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.instagram.com/abhijitpachpande/"
 
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/Abhi5Pande"
 
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.linkedin.com/in/abhijit-pachpande-27925a190/"
